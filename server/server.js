@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname, '../client')))
 app.use(express.static(path.join(__dirname, '/../', 'node_modules')))
 
 const messages = require('./routes/classifieds')
-app.use('/classifieds', messages)
+app.use('/api/classifieds', messages)
 
 app.use('*', function(req, res, next) {
   res.sendFile('index.html', { root: path.join(__dirname, '../client') })

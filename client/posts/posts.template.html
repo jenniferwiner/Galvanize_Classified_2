@@ -1,1 +1,5 @@
-<h1>Howdy</h1>
+<div ng-Repeat="post in $ctrl.posts">
+  <h3>{{ post.title }} | ${{ post.price }}</h3>
+  <img src="{{ post.item_image }}"/>
+  <p>{{ post.description }}</p>
+</div>
