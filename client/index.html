@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+  <meta charset="utf-8">
+  <title>Galvanize Classified</title>
+  <base href="/">
+</head>
+
+<body>
+
+  <!-- content -->
+  <ui-view></ui-view>
+
+  <!-- angular, ui-router, angular moment (with locales) -->
+  <script src="/angular/angular.min.js" charset="utf-8"></script>
+  <script src="/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment-with-locales.min.js" charset="utf-8"></script>
+  <script src="/angular-moment/angular-moment.min.js" charset="utf-8"></script>
+  <!-- app module and config -->
+  <script src="app.module.js" charset="utf-8"></script>
+  <script src="app.config.js" charset="utf-8"></script>
+  <!-- components -->
+  <script src="posts/posts.component.js" charset="utf-8"></script>
+  <!-- services -->
+  <script src="services/posts.service.js" charset="utf-8"></script>
+</body>
+
+</html>
