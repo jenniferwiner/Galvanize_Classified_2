@@ -17,5 +17,10 @@
         url: '/',
         component: 'posts'
       })
+      .state({
+        name: 'post-edit',
+        url: '/:id/edit',
+        component: 'editPost'
+      })
   }
 })()

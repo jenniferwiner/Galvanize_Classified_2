@@ -7,7 +7,7 @@ const router = express.Router()
 
 router.get('/', (req, res, next) => {
   knex('classifieds')
-  .select(['id', 'title', 'description', 'price', 'item_image'])
+  .select(['id', 'title', 'description', 'price', 'item_image', 'created_at'])
   .then(classifieds => {
     res.send(classifieds)
   })
@@ -16,7 +16,7 @@ router.get('/', (req, res, next) => {
 router.get('/:id', (req, res, next) => {
   let id = req.params.id
   knex('classifieds')
-  .select(['id', 'title', 'description', 'price', 'item_image'])
+  .select(['id', 'title', 'description', 'price', 'item_image', 'created_at'])
   .where('id', id)
   .then(classified => {
     res.send(classified[0])
